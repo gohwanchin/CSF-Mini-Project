@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { firstValueFrom, map, Subject } from "rxjs";
 import { Contact, Response } from "../models";
 
-const URL = "http://localhost:8080/api"
+const URL = "https://secret-mesa-42107.herokuapp.com/api"
 
 @Injectable()
 export class ContactService{

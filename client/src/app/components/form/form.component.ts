@@ -36,7 +36,7 @@ export class FormComponent implements OnInit {
     return this.fb.group({
       name: this.fb.control('', Validators.required),
       email: this.fb.control('', [Validators.required, Validators.email]),
-      mobile: this.fb.control('', Validators.required)
+      mobile: this.fb.control('', [Validators.required, Validators.max(99999999)])
     })
   }
 }
